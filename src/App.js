@@ -8,6 +8,7 @@ import { useState } from "react";
 import { evaluate } from 'mathjs';
 
 function App() {
+  
 
   const [input, setInput]= useState ('');
   const actualizarInput = valor => {
@@ -43,6 +44,7 @@ function App() {
   return (
     <div className="App">
       <div className = "ContenedorDeCalculadora">
+        
         <Display input={input}/>
         <div className= "fila">
           <BotonClear onClear={() => setInput('')}>
